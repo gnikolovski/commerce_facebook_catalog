@@ -1,0 +1,5 @@
+commerce_facebook_catalog.settings_form:
+  title: 'Facebook Catalog'
+  route_name: commerce_facebook_catalog.settings_form
+  description: 'Configure your Facebook Catalog related settings here.'
+  parent: commerce.configuration

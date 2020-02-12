@@ -1,0 +1,4 @@
+services:
+  commerce_facebook_catalog.facebook_catalog_builder:
+    class: Drupal\commerce_facebook_catalog\Service\FacebookCatalogBuilder
+    arguments: ['@entity_type.manager', '@config.factory', '@request_stack', '@cache.default']

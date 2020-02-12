@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Primary Commerce Facebook Catalog module file.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function commerce_facebook_catalog_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the commerce_facebook_catalog module.
+    case 'help.page.commerce_facebook_catalog':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides Facebook Catalog product feed.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

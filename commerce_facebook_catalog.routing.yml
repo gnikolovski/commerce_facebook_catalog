@@ -1,0 +1,15 @@
+commerce_facebook_catalog.settings_form:
+  path: '/admin/commerce/config/facebook-catalog'
+  defaults:
+    _form: '\Drupal\commerce_facebook_catalog\Form\FacebookCatalogSettingsForm'
+    _title: 'Facebook Catalog'
+  requirements:
+    _permission: 'access commerce facebook catalog administration pages'
+
+commerce_facebook_catalog.facebook_catalog:
+  path: '/facebook/catalog'
+  defaults:
+    _controller: '\Drupal\commerce_facebook_catalog\Controller\FacebookCatalogController::content'
+    _title: 'Facebook Catalog'
+  requirements:
+    _permission: 'access content'
