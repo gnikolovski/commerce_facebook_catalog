@@ -13,7 +13,7 @@ INTRODUCTION
 
 Provides Facebook Catalog product feed.
 
-For more information please check out my blog post:
+Before installing the module please read the following blog post:
 
 ```
 https://gorannikolovski.com/blog/drupal-commerce-and-facebook-product-catalog
