@@ -1,0 +1,20 @@
+{
+    "name": "gnikolovski/commerce_facebook_catalog",
+    "description": "Provides Facebook Catalog product feed.",
+    "type": "drupal-module",
+    "homepage": "https://github.com/gnikolovski/commerce_facebook_catalog",
+    "authors": [
+        {
+            "name": "Goran Nikolovski",
+            "email": "goran@gorannikolovski.com",
+            "homepage": "https://gorannikolovski.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gnikolovski/commerce_facebook_catalog/issues",
+        "email": "goran@gorannikolovski.com"
+    },
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev"
+}
