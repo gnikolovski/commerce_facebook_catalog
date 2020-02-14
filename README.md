@@ -15,9 +15,7 @@ Provides Facebook Catalog product feed.
 
 Before installing the module please read the following blog post:
 
-```
 https://gorannikolovski.com/blog/drupal-commerce-and-facebook-product-catalog
-```
 
 
 REQUIREMENTS
