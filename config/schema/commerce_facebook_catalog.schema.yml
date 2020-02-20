@@ -10,3 +10,6 @@ commerce_facebook_catalog.settings:
       sequence:
         type: string
       label: 'What to include?'
+    brand:
+      type: string
+      label: 'Brand name'

@@ -103,7 +103,7 @@ class FacebookCatalogSettingsForm extends ConfigFormBase {
 
     $form['facebook_catalog_feed_url_open_page'] = [
       '#type' => 'link',
-      '#title' => t('Open feed page'),
+      '#title' => $this->t('Open feed page'),
       '#url' => Url::fromRoute('commerce_facebook_catalog.facebook_catalog'),
       '#attributes' => [
         'target' => [
@@ -111,6 +111,17 @@ class FacebookCatalogSettingsForm extends ConfigFormBase {
         ],
       ],
       '#suffix' => '<br><br>',
+    ];
+
+    $form['brand'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Brand name'),
+      '#default_value' => $config->get('brand'),
+      '#states' => [
+        'visible' => [
+          ':input[name="facebook_catalog_enabled"]' => ['checked' => TRUE],
+        ],
+      ],
     ];
 
     return parent::buildForm($form, $form_state);
@@ -125,6 +136,7 @@ class FacebookCatalogSettingsForm extends ConfigFormBase {
     $config
       ->set('facebook_catalog_enabled', $form_state->getValue('facebook_catalog_enabled'))
       ->set('what_to_include', $form_state->getValue('what_to_include'))
+      ->set('brand', $form_state->getValue('brand'))
       ->save();
 
     parent::submitForm($form, $form_state);
