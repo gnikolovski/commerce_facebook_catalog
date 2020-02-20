@@ -13,11 +13,9 @@ INTRODUCTION
 
 Provides Facebook Catalog product feed.
 
-For more information please check out my blog post:
+Before installing the module please read the following blog post:
 
-```
 https://gorannikolovski.com/blog/drupal-commerce-and-facebook-product-catalog
-```
 
 
 REQUIREMENTS
@@ -32,6 +30,12 @@ INSTALLATION
  * Install the Commerce Facebook Catalog module as you would normally install a
    contributed Drupal module. Visit https://www.drupal.org/node/1897420 for
    further information.
+
+ * To download the module, enter the following command at the root of your site:
+ 
+```shell
+composer require gnikolovski/commerce_facebook_catalog
+```
 
 
 CONFIGURATION
