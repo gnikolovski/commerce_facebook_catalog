@@ -122,6 +122,11 @@ class FacebookCatalogBuilder {
           ])->toString();
           $description = strip_tags($commerce_product->body->value);
           $image_link = NULL;
+
+          if (!$commerce_product_variation->get('field_image')->first()) {
+            continue;
+          }
+
           if ($commerce_product_variation->get('field_image')->first()->entity) {
             $image_link = file_create_url($commerce_product_variation->get('field_image')->first()->entity->getFileUri());
           }
