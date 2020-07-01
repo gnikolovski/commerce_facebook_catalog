@@ -1,8 +1,9 @@
 name: 'Commerce Facebook Catalog'
 type: module
 description: 'Provides Facebook Catalog product feed.'
-package: Commerce (contrib)
+package: 'Commerce (contrib)'
 core: 8.x
+core_version_requirement: ^8 || ^9
 configure: commerce_facebook_catalog.settings_form
 dependencies:
   - commerce:commerce
