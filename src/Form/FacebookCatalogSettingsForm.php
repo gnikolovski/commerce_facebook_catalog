@@ -24,7 +24,7 @@ class FacebookCatalogSettingsForm extends ConfigFormBase {
   protected $currentRequest;
 
   /**
-   * ToolbarSettingsForm constructor.
+   * FacebookCatalogSettingsForm constructor.
    *
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The config factory.
