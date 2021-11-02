@@ -19,6 +19,6 @@
     "minimum-stability": "dev",
     "require": {
         "drupal/commerce": "^2.16",
-        "drupal/core": "^8 || ^9"
+        "drupal/core": "^8 || ^9.1"
     }
 }
