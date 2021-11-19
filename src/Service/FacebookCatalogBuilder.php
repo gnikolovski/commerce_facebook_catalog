@@ -92,13 +92,13 @@ class FacebookCatalogBuilder {
 
       $products = [];
       $base_url = $this->currentRequest->getSchemeAndHttpHost();
+      
+      $what_to_include = $this->configFactory
+        ->get('commerce_facebook_catalog.settings')
+        ->get('what_to_include');
 
       /** @var \Drupal\commerce_product\Entity\Product $commerce_product */
       foreach ($commerce_products as $commerce_product) {
-        $what_to_include = $this->configFactory
-          ->get('commerce_facebook_catalog.settings')
-          ->get('what_to_include');
-
         if ($what_to_include == 'all_variations') {
           $commerce_product_variations = $commerce_product->getVariations();
         }
